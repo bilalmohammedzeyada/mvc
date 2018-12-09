@@ -1,7 +1,3 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: immingmar
- * Date: 12/7/18
- * Time: 6:57 PM
- */
+require "vendor/autoload.php";
+$db = new \System\DB\Mysqli(config('db_host'),config('db_name'))

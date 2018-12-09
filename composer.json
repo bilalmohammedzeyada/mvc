@@ -1,4 +1,13 @@
 {
     "name": "immingmar/mvc",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Apps\\": "apps/",
+            "System\\":"system/"
+        },
+        "files": [
+            "helpers/functions.php"
+        ]
+    }
 }
