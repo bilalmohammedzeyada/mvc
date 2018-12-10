@@ -1,3 +1,5 @@
 <?php
 require "vendor/autoload.php";
-$db = new \System\DB\Mysqli(config('db_host'),config('db_name'))
+$categories = new \Apps\Models\Category;
+$categories->select('name, slug');
+dump($categories);
